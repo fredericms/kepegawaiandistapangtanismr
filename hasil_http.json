@@ -1,0 +1,286 @@
+{
+  "passed": 70,
+  "failed": 0,
+  "results": [
+    {
+      "test": "Beranda publik dapat diakses",
+      "passed": true
+    },
+    {
+      "test": "Beranda tidak memuat pintasan Admin",
+      "passed": true
+    },
+    {
+      "test": "NIP dan tanggal lahir lengkap tidak bocor di HTML publik",
+      "passed": true
+    },
+    {
+      "test": "Publik tidak menerima mutasi",
+      "passed": true
+    },
+    {
+      "test": "Admin tanpa login diarahkan ke login",
+      "passed": true
+    },
+    {
+      "test": "CRUD tanpa autentikasi ditolak",
+      "passed": true
+    },
+    {
+      "test": "Pintasan tambah admin membutuhkan login",
+      "passed": true
+    },
+    {
+      "test": "Berkas internal tidak tersedia: /config.php",
+      "passed": true
+    },
+    {
+      "test": "Berkas internal tidak tersedia: /functions.php",
+      "passed": true
+    },
+    {
+      "test": "Berkas internal tidak tersedia: /kepegawaian_distapangtani.sql",
+      "passed": true
+    },
+    {
+      "test": "Berkas internal tidak tersedia: /migrasi.sql",
+      "passed": true
+    },
+    {
+      "test": "Berkas internal tidak tersedia: /tests.php",
+      "passed": true
+    },
+    {
+      "test": "Berkas internal tidak tersedia: /test_http.py",
+      "passed": true
+    },
+    {
+      "test": "Header CSP, anti-frame dan nosniff tersedia",
+      "passed": true
+    },
+    {
+      "test": "Cookie HttpOnly dan SameSite=Lax",
+      "passed": true
+    },
+    {
+      "test": "Login tanpa CSRF ditolak",
+      "passed": true
+    },
+    {
+      "test": "Pesan generik sama untuk username/password salah",
+      "passed": true
+    },
+    {
+      "test": "SQL injection login gagal",
+      "passed": true
+    },
+    {
+      "test": "Login superadmin bawaan berhasil",
+      "passed": true
+    },
+    {
+      "test": "Session ID berubah setelah login",
+      "passed": true
+    },
+    {
+      "test": "Tabel privat mengekstrak NIP contoh",
+      "passed": true
+    },
+    {
+      "test": "NIPPPK 202521 menunggu input manual",
+      "passed": true
+    },
+    {
+      "test": "CRUD tanpa CSRF ditolak",
+      "passed": true
+    },
+    {
+      "test": "Tambah PNS berhasil",
+      "passed": true
+    },
+    {
+      "test": "NIP duplikat ditolak",
+      "passed": true
+    },
+    {
+      "test": "NIP 17 digit ditolak server",
+      "passed": true
+    },
+    {
+      "test": "Tanggal NIP tidak valid ditolak",
+      "passed": true
+    },
+    {
+      "test": "PPPK tanpa bulan ditolak dan ID edit dipertahankan",
+      "passed": true
+    },
+    {
+      "test": "Ubah PNS ke PPPK dengan bulan manual",
+      "passed": true
+    },
+    {
+      "test": "Usia/tanggal pengangkatan PPPK tampil benar",
+      "passed": true
+    },
+    {
+      "test": "Edit dari versi lama ditolak",
+      "passed": true
+    },
+    {
+      "test": "Hapus dari versi lama ditolak",
+      "passed": true
+    },
+    {
+      "test": "Hapus pegawai berhasil",
+      "passed": true
+    },
+    {
+      "test": "Tambah TEST PJLP A tanpa NIP",
+      "passed": true
+    },
+    {
+      "test": "Tambah TEST PJLP B tanpa NIP",
+      "passed": true
+    },
+    {
+      "test": "PJLP menampilkan tanda strip di nomor",
+      "passed": true
+    },
+    {
+      "test": "Nama tersimpan aman sebagai teks",
+      "passed": true
+    },
+    {
+      "test": "Stored XSS di Admin di-escape",
+      "passed": true
+    },
+    {
+      "test": "Stored XSS di Publik di-escape",
+      "passed": true
+    },
+    {
+      "test": "Superadmin dapat menambahkan admin",
+      "passed": true
+    },
+    {
+      "test": "Username duplikat ditolak",
+      "passed": true
+    },
+    {
+      "test": "Admin biasa dapat login",
+      "passed": true
+    },
+    {
+      "test": "Admin biasa tidak mendapat kontrol kelola admin",
+      "passed": true
+    },
+    {
+      "test": "Hak superadmin dari parameter role diabaikan",
+      "passed": true
+    },
+    {
+      "test": "Admin biasa tidak dapat membuat admin",
+      "passed": true
+    },
+    {
+      "test": "Admin biasa dapat CRUD pegawai",
+      "passed": true
+    },
+    {
+      "test": "Admin dinonaktifkan",
+      "passed": true
+    },
+    {
+      "test": "Sesi admin nonaktif langsung dicabut",
+      "passed": true
+    },
+    {
+      "test": "Admin nonaktif tidak dapat login",
+      "passed": true
+    },
+    {
+      "test": "Admin aktif kembali dapat login",
+      "passed": true
+    },
+    {
+      "test": "Ganti password dengan password lama salah ditolak",
+      "passed": true
+    },
+    {
+      "test": "Ganti password sendiri berhasil",
+      "passed": true
+    },
+    {
+      "test": "Ganti password mencabut sesi lain",
+      "passed": true
+    },
+    {
+      "test": "Sesi pengubah password tetap berlaku",
+      "passed": true
+    },
+    {
+      "test": "Superadmin terakhir tidak dapat dihapus",
+      "passed": true
+    },
+    {
+      "test": "Superadmin tidak dapat dinonaktifkan",
+      "passed": true
+    },
+    {
+      "test": "Logout lewat GET ditolak",
+      "passed": true
+    },
+    {
+      "test": "Logout POST berhasil",
+      "passed": true
+    },
+    {
+      "test": "Halaman Admin tidak tersedia setelah logout",
+      "passed": true
+    },
+    {
+      "test": "Gagal login berurutan 1",
+      "passed": true
+    },
+    {
+      "test": "Gagal login berurutan 2",
+      "passed": true
+    },
+    {
+      "test": "Gagal login berurutan 3",
+      "passed": true
+    },
+    {
+      "test": "Gagal login berurutan 4",
+      "passed": true
+    },
+    {
+      "test": "Gagal login berurutan 5",
+      "passed": true
+    },
+    {
+      "test": "Password benar ditolak selama akun terkunci",
+      "passed": true
+    },
+    {
+      "test": "Superadmin dapat membuka kunci akun",
+      "passed": true
+    },
+    {
+      "test": "Akun dapat login setelah dibuka",
+      "passed": true
+    },
+    {
+      "test": "Superadmin dapat menghapus admin",
+      "passed": true
+    },
+    {
+      "test": "Sesi akun terhapus dicabut",
+      "passed": true
+    },
+    {
+      "test": "Batas IP berlaku lintas sesi dan username",
+      "passed": true
+    }
+  ]
+}

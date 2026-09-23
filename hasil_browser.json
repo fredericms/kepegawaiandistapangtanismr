@@ -1,0 +1,70 @@
+{
+  "passed": 16,
+  "failed": 0,
+  "results": [
+    {
+      "test": "Tabel publik menampilkan 10 baris per halaman",
+      "passed": true
+    },
+    {
+      "test": "Pencarian nama interaktif",
+      "passed": true
+    },
+    {
+      "test": "Filter status menampilkan 28 pegawai",
+      "passed": true
+    },
+    {
+      "test": "Navigasi halaman berikutnya",
+      "passed": true
+    },
+    {
+      "test": "Empty state terlihat",
+      "passed": true
+    },
+    {
+      "test": "URL /admin huruf kecil membuka login",
+      "passed": true
+    },
+    {
+      "test": "Dialog tambah pegawai tampil",
+      "passed": true
+    },
+    {
+      "test": "PJLP menyembunyikan serta menonaktifkan kolom NIP",
+      "passed": true
+    },
+    {
+      "test": "PJLP menyediakan tanggal lahir manual",
+      "passed": true
+    },
+    {
+      "test": "PPPK menampilkan NIPPPK dan bulan mulai ASN",
+      "passed": true
+    },
+    {
+      "test": "Pratinjau NIP menampilkan tanggal lahir",
+      "passed": true
+    },
+    {
+      "test": "Manajemen admin tetap dalam halaman Admin",
+      "passed": true
+    },
+    {
+      "test": "Beranda mobile tidak overflow horizontal",
+      "passed": true
+    },
+    {
+      "test": "Admin mobile tidak overflow horizontal",
+      "passed": true
+    },
+    {
+      "test": "Dialog mobile muat dalam viewport",
+      "passed": true
+    },
+    {
+      "test": "Tidak ada error JavaScript atau pelanggaran CSP",
+      "passed": true
+    }
+  ]
+}

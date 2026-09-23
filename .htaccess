@@ -1,0 +1,10 @@
+Options -Indexes
+DirectoryIndex index.php
+RewriteEngine On
+# Alias URL huruf kecil untuk folder fisik Admin (Linux case-sensitive).
+RewriteRule ^admin/?$ Admin/index.php [END]
+RewriteRule ^admin/(index|login|logout|tambah-admin)\.php$ Admin/$1.php [END]
+# Jangan layani file internal atau berkas distribusi melalui HTTP.
+<FilesMatch "(?i)^(config\.php|functions\.php|tests\.php|router\.php|admin-preview\.png|form-preview\.png)$|\.(sql|md|json|zip|py|cjs|log|ini|bak)$">
+    Require all denied
+</FilesMatch>
