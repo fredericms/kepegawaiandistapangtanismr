@@ -1,0 +1,90 @@
+{
+  "passed": 21,
+  "failed": 0,
+  "results": [
+    {
+      "test": "Login pengelola untuk pendidikan",
+      "passed": true
+    },
+    {
+      "test": "Tambah pendidikan otomatis berhasil",
+      "passed": true
+    },
+    {
+      "test": "Pendidikan S2 disimpan dan tampil",
+      "passed": true
+    },
+    {
+      "test": "Koreksi manual berhasil",
+      "passed": true
+    },
+    {
+      "test": "Manual mengalahkan gelar S2",
+      "passed": true
+    },
+    {
+      "test": "Nama berubah tanpa menimpa pilihan manual",
+      "passed": true
+    },
+    {
+      "test": "Mode otomatis dapat diterapkan ulang",
+      "passed": true
+    },
+    {
+      "test": "Nilai pendidikan palsu ditolak",
+      "passed": true
+    },
+    {
+      "test": "Pilihan multiple array ditolak",
+      "passed": true
+    },
+    {
+      "test": "Simpan otomatis Ir. TEST Pendidikan",
+      "passed": true
+    },
+    {
+      "test": "Simpan otomatis drh. TEST Pendidikan",
+      "passed": true
+    },
+    {
+      "test": "Simpan otomatis drh. TEST Pendidikan, M.Si.",
+      "passed": true
+    },
+    {
+      "test": "Simpan pilihan SD/sederajat",
+      "passed": true
+    },
+    {
+      "test": "Simpan pilihan SMP/sederajat",
+      "passed": true
+    },
+    {
+      "test": "Simpan pilihan SMA/sederajat",
+      "passed": true
+    },
+    {
+      "test": "Simpan pilihan Diploma I - Diploma III",
+      "passed": true
+    },
+    {
+      "test": "Simpan pilihan Diploma IV/Sarjana (S1)",
+      "passed": true
+    },
+    {
+      "test": "Simpan pilihan Magister (S2)",
+      "passed": true
+    },
+    {
+      "test": "Simpan pilihan Doktor (S3)",
+      "passed": true
+    },
+    {
+      "test": "Simpan pilihan Program Profesi Dokter Hewan",
+      "passed": true
+    },
+    {
+      "test": "Tanpa gelar tidak dianggap pendidikan tertentu",
+      "passed": true
+    }
+  ]
+}

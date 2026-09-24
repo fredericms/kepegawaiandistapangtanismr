@@ -1,0 +1,36 @@
+{
+    "passed": 7,
+    "failed": 0,
+    "detected": 72,
+    "remaining": 57,
+    "results": [
+        {
+            "test": "SQL lengkap dan migrasi menghasilkan 129 baris identik",
+            "passed": true
+        },
+        {
+            "test": "Deteksi SQL dan PHP konsisten pada seluruh data asli",
+            "passed": true
+        },
+        {
+            "test": "Hanya satu kolom pendidikan ditambahkan",
+            "passed": true
+        },
+        {
+            "test": "Migrasi memilih tertinggi, menangani tanpa gelar, menjaga koreksi manual",
+            "passed": true
+        },
+        {
+            "test": "Upgrade dari versi pendidikan lama sama dengan instalasi baru",
+            "passed": true
+        },
+        {
+            "test": "Migrasi ulang mempertahankan nilai manual",
+            "passed": true
+        },
+        {
+            "test": "Akun awal tidak berubah",
+            "passed": true
+        }
+    ]
+}

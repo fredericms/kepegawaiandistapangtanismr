@@ -1,5 +1,7 @@
 <?php
 require __DIR__.'/config.php'; require __DIR__.'/functions.php';
+// Pastikan HTML Beranda terbaru digunakan setelah pembaruan teks.
+if (PHP_SAPI !== 'cli') { header('Cache-Control: no-store, private, max-age=0, must-revalidate'); }
 if ($_SERVER['REQUEST_METHOD']!=='GET' && $_SERVER['REQUEST_METHOD']!=='HEAD') { http_response_code(405); header('Allow: GET, HEAD'); exit('Metode tidak diizinkan.'); }
 // Hanya agregat yang dirender ke publik; nama, jabatan, NIP dan tanggal lahir
 // individual tidak pernah dikirim dalam HTML, atribut data, maupun JavaScript.
@@ -15,9 +17,9 @@ $generationTotal=array_sum($dashboard['all']['generations']); $genderTotal=array
 // Fingerprint aset khusus Beranda untuk mencegah CSS/JS lama dari cache browser.
 $assetVersion=substr(hash('sha256',hash_file('sha256',__DIR__.'/style.css').hash_file('sha256',__DIR__.'/app.js')),0,12);
 page_top('Beranda',null,$assetVersion); ?>
-<section class="hero"><div class="hero-copy"><div class="eyebrow"><span class="live-dot"></span> PORTAL INFORMASI PUBLIK</div><h1>Kenali tim di balik<br><em>ketahanan pangan.</em></h1><p><?=e(APP_TITLE)?></p><div class="hero-bottom"><span class="pill">Data langsung dari sistem</span><span><?=e(date_id(new DateTimeImmutable('today')))?></span></div></div><div class="hero-art" aria-hidden="true"><div class="art-ring ring-one"></div><div class="art-ring ring-two"></div><span class="leaf leaf-one"></span><span class="leaf leaf-two"></span><span class="leaf leaf-three"></span><div class="art-stem"></div><span class="art-caption">TUMBUH BERSAMA<br>MELAYANI SAMARINDA</span></div></section>
+<section class="hero"><div class="hero-copy"><div class="eyebrow"><span class="live-dot"></span> PORTAL INFORMASI PUBLIK</div><h1>Kami, pegawai di dinas yang mengurusi<br><em>ketahanan pangan dan pertanian</em></h1><p>Statistik Kepegawaian di Dinas Ketahanan Pangan dan Pertanian (Distapangtani) Kota Samarinda</p><div class="hero-bottom"><span class="pill">Data langsung dari sistem</span><span><?=e(date_id(new DateTimeImmutable('today')))?></span></div></div><div class="hero-art" aria-hidden="true"><div class="art-ring ring-one"></div><div class="art-ring ring-two"></div><span class="leaf leaf-one"></span><span class="leaf leaf-two"></span><span class="leaf leaf-three"></span><div class="art-stem"></div><span class="art-caption">TUMBUH BERSAMA<br>MELAYANI SAMARINDA</span></div></section>
 
-<div class="section-head"><div><div class="eyebrow muted">GAMBARAN ORGANISASI</div><h2>Komposisi pegawai</h2></div><span class="subtle">Empat status, satu pelayanan.</span></div>
+<div class="section-head"><div><div class="eyebrow muted">GAMBARAN ORGANISASI</div><h2>Komposisi Status Kepegawaian</h2></div><span class="subtle">Empat status, satu pelayanan.</span></div>
 <section class="stats" aria-label="Jumlah pegawai"><?php foreach(STATUSES as $i=>$s): ?><article class="stat"><div class="stat-top"><span class="stat-symbol symbol-<?=$i?>"><?=['◎','◈','◷','◇'][$i]?></span><span><?=e($s)?></span></div><strong><?=$counts[$s]?></strong><span class="subtle">pegawai <span class="stat-percent"><?=$total ? round(100*$counts[$s]/$total) : 0?>% dari total</span></span><progress value="<?=$counts[$s]?>" max="<?=max(1,$total)?>" aria-label="Proporsi <?=e($s)?>"></progress></article><?php endforeach ?></section>
 <section id="public-dashboard" data-analytics="<?=e(json_encode($analytics,JSON_THROW_ON_ERROR))?>" data-job-labels="<?=e(json_encode(PUBLIC_JOB_LABELS,JSON_THROW_ON_ERROR))?>" data-summary="<?=e(json_encode($dashboard,JSON_THROW_ON_ERROR))?>">
 <div class="panel dashboard-controls"><div><div class="eyebrow muted">DASHBOARD DEMOGRAFI</div><h2>Profil pegawai dalam angka</h2><p class="subtle">Pilih statistik umum, latar belakang pendidikan, atau jabatan.</p><nav class="public-tabs" role="tablist" aria-label="Statistik kepegawaian">

@@ -1,69 +1,294 @@
 {
-  "passed": 16,
+  "external_logo_loaded": false,
+  "passed": 72,
   "failed": 0,
   "results": [
     {
-      "test": "Tabel publik menampilkan 10 baris per halaman",
+      "test": "Tiga tab tersedia",
       "passed": true
     },
     {
-      "test": "Pencarian nama interaktif",
+      "test": "Tab berada dalam Dashboard Demografi",
       "passed": true
     },
     {
-      "test": "Filter status menampilkan 28 pegawai",
+      "test": "Judul jenis kelamin sesuai permintaan",
       "passed": true
     },
     {
-      "test": "Navigasi halaman berikutnya",
+      "test": "Label total adalah pegawai",
       "passed": true
     },
     {
-      "test": "Empty state terlihat",
+      "test": "Logo kota menggantikan D di Beranda",
       "passed": true
     },
     {
-      "test": "URL /admin huruf kecil membuka login",
+      "test": "Ukuran logo desktop dipertahankan",
       "passed": true
     },
     {
-      "test": "Dialog tambah pegawai tampil",
+      "test": "CSP mengizinkan gambar Wikimedia",
       "passed": true
     },
     {
-      "test": "PJLP menyembunyikan serta menonaktifkan kolom NIP",
+      "test": "Grafik usia tersedia langsung pada HTML",
       "passed": true
     },
     {
-      "test": "PJLP menyediakan tanggal lahir manual",
+      "test": "Grafik horizontal desktop aktif",
       "passed": true
     },
     {
-      "test": "PPPK menampilkan NIPPPK dan bulan mulai ASN",
+      "test": "Seluruh pegawai tetap 129",
       "passed": true
     },
     {
-      "test": "Pratinjau NIP menampilkan tanggal lahir",
+      "test": "Tidak ada pintasan Admin publik",
       "passed": true
     },
     {
-      "test": "Manajemen admin tetap dalam halaman Admin",
+      "test": "Usia dan cakupan all/all",
       "passed": true
     },
     {
-      "test": "Beranda mobile tidak overflow horizontal",
+      "test": "Tab pendidikan all/all",
       "passed": true
     },
     {
-      "test": "Admin mobile tidak overflow horizontal",
+      "test": "Tab jabatan all/all",
       "passed": true
     },
     {
-      "test": "Dialog mobile muat dalam viewport",
+      "test": "Usia dan cakupan all/male",
       "passed": true
     },
     {
-      "test": "Tidak ada error JavaScript atau pelanggaran CSP",
+      "test": "Tab pendidikan all/male",
+      "passed": true
+    },
+    {
+      "test": "Tab jabatan all/male",
+      "passed": true
+    },
+    {
+      "test": "Usia dan cakupan all/female",
+      "passed": true
+    },
+    {
+      "test": "Tab pendidikan all/female",
+      "passed": true
+    },
+    {
+      "test": "Tab jabatan all/female",
+      "passed": true
+    },
+    {
+      "test": "Usia dan cakupan PNS/all",
+      "passed": true
+    },
+    {
+      "test": "Tab pendidikan PNS/all",
+      "passed": true
+    },
+    {
+      "test": "Tab jabatan PNS/all",
+      "passed": true
+    },
+    {
+      "test": "Usia dan cakupan PNS/male",
+      "passed": true
+    },
+    {
+      "test": "Tab pendidikan PNS/male",
+      "passed": true
+    },
+    {
+      "test": "Tab jabatan PNS/male",
+      "passed": true
+    },
+    {
+      "test": "Usia dan cakupan PNS/female",
+      "passed": true
+    },
+    {
+      "test": "Tab pendidikan PNS/female",
+      "passed": true
+    },
+    {
+      "test": "Tab jabatan PNS/female",
+      "passed": true
+    },
+    {
+      "test": "Usia dan cakupan PPPK Penuh Waktu/all",
+      "passed": true
+    },
+    {
+      "test": "Tab pendidikan PPPK Penuh Waktu/all",
+      "passed": true
+    },
+    {
+      "test": "Tab jabatan PPPK Penuh Waktu/all",
+      "passed": true
+    },
+    {
+      "test": "Usia dan cakupan PPPK Penuh Waktu/male",
+      "passed": true
+    },
+    {
+      "test": "Tab pendidikan PPPK Penuh Waktu/male",
+      "passed": true
+    },
+    {
+      "test": "Tab jabatan PPPK Penuh Waktu/male",
+      "passed": true
+    },
+    {
+      "test": "Usia dan cakupan PPPK Penuh Waktu/female",
+      "passed": true
+    },
+    {
+      "test": "Tab pendidikan PPPK Penuh Waktu/female",
+      "passed": true
+    },
+    {
+      "test": "Tab jabatan PPPK Penuh Waktu/female",
+      "passed": true
+    },
+    {
+      "test": "Usia dan cakupan PPPK Paruh Waktu/all",
+      "passed": true
+    },
+    {
+      "test": "Tab pendidikan PPPK Paruh Waktu/all",
+      "passed": true
+    },
+    {
+      "test": "Tab jabatan PPPK Paruh Waktu/all",
+      "passed": true
+    },
+    {
+      "test": "Usia dan cakupan PPPK Paruh Waktu/male",
+      "passed": true
+    },
+    {
+      "test": "Tab pendidikan PPPK Paruh Waktu/male",
+      "passed": true
+    },
+    {
+      "test": "Tab jabatan PPPK Paruh Waktu/male",
+      "passed": true
+    },
+    {
+      "test": "Usia dan cakupan PPPK Paruh Waktu/female",
+      "passed": true
+    },
+    {
+      "test": "Tab pendidikan PPPK Paruh Waktu/female",
+      "passed": true
+    },
+    {
+      "test": "Tab jabatan PPPK Paruh Waktu/female",
+      "passed": true
+    },
+    {
+      "test": "Usia dan cakupan PJLP/all",
+      "passed": true
+    },
+    {
+      "test": "Tab pendidikan PJLP/all",
+      "passed": true
+    },
+    {
+      "test": "Tab jabatan PJLP/all",
+      "passed": true
+    },
+    {
+      "test": "Usia dan cakupan PJLP/male",
+      "passed": true
+    },
+    {
+      "test": "Tab pendidikan PJLP/male",
+      "passed": true
+    },
+    {
+      "test": "Tab jabatan PJLP/male",
+      "passed": true
+    },
+    {
+      "test": "Usia dan cakupan PJLP/female",
+      "passed": true
+    },
+    {
+      "test": "Tab pendidikan PJLP/female",
+      "passed": true
+    },
+    {
+      "test": "Tab jabatan PJLP/female",
+      "passed": true
+    },
+    {
+      "test": "Mode persentase berlaku pendidikan",
+      "passed": true
+    },
+    {
+      "test": "Keyboard panah mengganti tab",
+      "passed": true
+    },
+    {
+      "test": "Keyboard Home kembali ke umum",
+      "passed": true
+    },
+    {
+      "test": "Tidak overflow 390px Statistik umum",
+      "passed": true
+    },
+    {
+      "test": "Tidak overflow 390px Pendidikan",
+      "passed": true
+    },
+    {
+      "test": "Tidak overflow 390px Jabatan",
+      "passed": true
+    },
+    {
+      "test": "Tidak overflow 320px Statistik umum",
+      "passed": true
+    },
+    {
+      "test": "Tidak overflow 320px Pendidikan",
+      "passed": true
+    },
+    {
+      "test": "Tidak overflow 320px Jabatan",
+      "passed": true
+    },
+    {
+      "test": "Tidak overflow 768px Statistik umum",
+      "passed": true
+    },
+    {
+      "test": "Tidak overflow 768px Pendidikan",
+      "passed": true
+    },
+    {
+      "test": "Tidak overflow 768px Jabatan",
+      "passed": true
+    },
+    {
+      "test": "Ukuran logo mobile dipertahankan",
+      "passed": true
+    },
+    {
+      "test": "Mobile menggunakan grafik kolom",
+      "passed": true
+    },
+    {
+      "test": "Rincian jabatan menampilkan batang",
+      "passed": true
+    },
+    {
+      "test": "Tidak ada galat JS/CSP",
       "passed": true
     }
   ]

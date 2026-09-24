@@ -155,7 +155,7 @@
       "passed": true
     },
     {
-      "test": "Stored XSS di Publik di-escape",
+      "test": "Identitas dan stored XSS tidak dikirim ke publik",
       "passed": true
     },
     {

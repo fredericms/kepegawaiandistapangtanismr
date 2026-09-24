@@ -1,10 +1,23 @@
 'use strict';
-// Embed Wikimedia; gambar lokal dipakai jika sumber eksternal gagal dimuat.
+// Inisialisasi legenda dilakukan sebelum render grafik lainnya.
+function syncGenderLegend(){
+ const select=document.getElementById('analytics-sex'),panel=document.querySelector('#public-dashboard .gender-panel');
+ if(!select || !panel)return;
+ const single=select.value==='male'||select.value==='female';
+ panel.dataset.singleGender=String(single);
+ panel.querySelectorAll('.chart-bars').forEach(legend=>{legend.hidden=single;legend.setAttribute('aria-hidden',String(single));});
+}
+const publicGenderSelect=document.getElementById('analytics-sex');
+if(publicGenderSelect){publicGenderSelect.addEventListener('change',syncGenderLegend);window.addEventListener('pageshow',syncGenderLegend);syncGenderLegend();}
+// Embed logo dan favicon dari sumber yang sama; cadangan lokal jika jaringan gagal.
+const cityFavicon=document.getElementById('city-favicon');
+const useLocalFavicon=()=>{if(cityFavicon && !cityFavicon.dataset.fallbackUsed){cityFavicon.dataset.fallbackUsed='1';cityFavicon.href=cityFavicon.dataset.fallback;}};
+if(cityFavicon){const faviconProbe=new Image();faviconProbe.onerror=useLocalFavicon;faviconProbe.src=cityFavicon.href;}
 const cityLogo=document.querySelector('.city-logo img[data-fallback]');
 if(cityLogo){
-  const useLocalLogo=()=>{if(cityLogo.dataset.fallbackUsed)return;cityLogo.dataset.fallbackUsed='1';cityLogo.src=cityLogo.dataset.fallback;};
-  cityLogo.addEventListener('error',useLocalLogo,{once:true});
-  if(cityLogo.complete && cityLogo.naturalWidth===0)useLocalLogo();
+ const useLocalLogo=()=>{if(cityLogo.dataset.fallbackUsed)return;cityLogo.dataset.fallbackUsed='1';cityLogo.src=cityLogo.dataset.fallback;useLocalFavicon();};
+ cityLogo.addEventListener('error',useLocalLogo,{once:true});
+ if(cityLogo.complete && cityLogo.naturalWidth===0)useLocalLogo();
 }
 // Tidak ada data pegawai atau password yang disimpan ke localStorage.
 const all = (s, root=document) => [...root.querySelectorAll(s)];
@@ -82,8 +95,7 @@ if(table){
     document.getElementById('generation-coverage').textContent=`Mencakup ${generationTotal} dari ${data.total} pegawai.`;
     document.getElementById('gender-coverage').textContent=`Mencakup ${genderTotal} dari ${data.total} pegawai.`;
     document.getElementById('gender-scope').textContent=scope;
-    const genderLegend=root.querySelector('.gender-panel .chart-bars');
-    if(genderLegend)genderLegend.hidden=document.getElementById('analytics-sex').value!=='all';
+    syncGenderLegend();
     document.getElementById('demographic-empty').hidden=data.total!==0;
     all('.chart-row',root).forEach(row=>{
       const n=data[row.dataset.group][row.dataset.key],denominator=row.dataset.group==='genders'?genderTotal:generationTotal,pct=denominator?100*n/denominator:0;

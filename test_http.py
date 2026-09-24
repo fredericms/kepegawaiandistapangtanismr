@@ -87,7 +87,7 @@ try:
     payload='TEST <script>alert(1)</script>'
     check('Nama tersimpan aman sebagai teks',action(a,dict(record,nama=payload,status_kepegawaian='PJLP',nip=''))[0]==303)
     check('Stored XSS di Admin di-escape',payload not in a.get('/admin/')[1] and '&lt;script&gt;' in a.get('/admin/')[1])
-    check('Stored XSS di Publik di-escape',payload not in public.get()[1] and '&lt;script&gt;' in public.get()[1])
+    check('Identitas dan stored XSS tidak dikirim ke publik',payload not in public.get()[1] and '&lt;script&gt;' not in public.get()[1])
     for name in ['TEST PJLP A','TEST PJLP B',payload]:action(a,dict(employee(a,name),action='delete_employee'))
     addadmin={'action':'save_admin','id':'','auth_version':1,'nama_admin':'TEST Operator','username':'test.operator','password':'TestPassword123!','aktif':'1','role':'superadmin'}
     check('Superadmin dapat menambahkan admin',action(a,addadmin)[0]==303)

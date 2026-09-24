@@ -64,3 +64,9 @@
 
 /* Legenda hanya dibutuhkan untuk perbandingan kedua jenis kelamin. */
 #public-dashboard .gender-panel[data-single-gender="true"] .chart-bars{display:none!important}
+
+/* Nama lengkap dinas pada navbar publik. */
+.public-brand{min-width:0;letter-spacing:.5px}
+.public-brand .brand-name{min-width:0;max-width:430px;line-height:1.35}
+.public-brand + .public-nav{flex-shrink:0}
+@media(max-width:700px){.public-brand{font-size:11px;letter-spacing:0}.public-brand .brand-name{max-width:250px}.public-brand small{font-size:7px;letter-spacing:1.4px}}

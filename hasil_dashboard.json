@@ -1,0 +1,246 @@
+{
+    "passed": 60,
+    "failed": 0,
+    "results": [
+        {
+            "test": "Kategori tersembunyi dan rekap tidak dirender",
+            "passed": true
+        },
+        {
+            "test": "HTML publik tidak memuat direktori pegawai",
+            "passed": true
+        },
+        {
+            "test": "Identitas individual tidak dikirim ke publik",
+            "passed": true
+        },
+        {
+            "test": "Payload hanya memuat jumlah agregat",
+            "passed": true
+        },
+        {
+            "test": "Total generasi dan gender konsisten: all",
+            "passed": true
+        },
+        {
+            "test": "Total generasi dan gender konsisten: PNS",
+            "passed": true
+        },
+        {
+            "test": "Total generasi dan gender konsisten: PPPK Penuh Waktu",
+            "passed": true
+        },
+        {
+            "test": "Total generasi dan gender konsisten: PPPK Paruh Waktu",
+            "passed": true
+        },
+        {
+            "test": "Total generasi dan gender konsisten: PJLP",
+            "passed": true
+        },
+        {
+            "test": "Statistik usia: []",
+            "passed": true
+        },
+        {
+            "test": "Statistik usia: [20]",
+            "passed": true
+        },
+        {
+            "test": "Statistik usia: [40,20,30]",
+            "passed": true
+        },
+        {
+            "test": "Statistik usia: [21,20,40,30]",
+            "passed": true
+        },
+        {
+            "test": "Kelompok jabatan: Kepala Dinas",
+            "passed": true
+        },
+        {
+            "test": "Kelompok jabatan: Sekretaris Dinas",
+            "passed": true
+        },
+        {
+            "test": "Kelompok jabatan: Kabid Pangan",
+            "passed": true
+        },
+        {
+            "test": "Kelompok jabatan: Kepala Sub Bagian Umum",
+            "passed": true
+        },
+        {
+            "test": "Kelompok jabatan: Kasubag. Tata Usaha",
+            "passed": true
+        },
+        {
+            "test": "Kelompok jabatan: Kepala UPTD",
+            "passed": true
+        },
+        {
+            "test": "Kelompok jabatan: Plt. Kabid Pangan",
+            "passed": true
+        },
+        {
+            "test": "Kelompok jabatan: Analis Ketahanan Pangan Muda (Penyetaraan)",
+            "passed": true
+        },
+        {
+            "test": "Kelompok jabatan: Medik Veteriner Ahli Pertama",
+            "passed": true
+        },
+        {
+            "test": "Kelompok jabatan: Analis Ketahanan Pangan Ahli Madya",
+            "passed": true
+        },
+        {
+            "test": "Kelompok jabatan: Paramedik Veteriner Terampil",
+            "passed": true
+        },
+        {
+            "test": "Kelompok jabatan: Paramedik Veteriner Mahir",
+            "passed": true
+        },
+        {
+            "test": "Kelompok jabatan: Pengendali Organisme Penggangu Tumbuhan (Penyetraan)",
+            "passed": true
+        },
+        {
+            "test": "Kelompok jabatan: Pengolah Data dan Informasi",
+            "passed": true
+        },
+        {
+            "test": "Kelompok jabatan: ",
+            "passed": true
+        },
+        {
+            "test": "PNS memakai bulan NIP; PPPK memakai tanggal manual",
+            "passed": true
+        },
+        {
+            "test": "PJLP dan tanggal kosong tidak dianggap usia nol",
+            "passed": true
+        },
+        {
+            "test": "Irisan status dan gender benar",
+            "passed": true
+        },
+        {
+            "test": "Pendidikan memakai nilai tersimpan, bukan gelar",
+            "passed": true
+        },
+        {
+            "test": "PLT dihitung satu kali",
+            "passed": true
+        },
+        {
+            "test": "Tanggal pengangkatan tidak layak dikeluarkan: invalid",
+            "passed": true
+        },
+        {
+            "test": "Tanggal pengangkatan tidak layak dikeluarkan: 1999-01-01",
+            "passed": true
+        },
+        {
+            "test": "Tanggal pengangkatan tidak layak dikeluarkan: 2099-01-01",
+            "passed": true
+        },
+        {
+            "test": "Tanggal lahir tidak valid dikeluarkan",
+            "passed": true
+        },
+        {
+            "test": "Payload analitik tidak memuat identitas atau usia individual",
+            "passed": true
+        },
+        {
+            "test": "Konsistensi agregat all \/ all",
+            "passed": true
+        },
+        {
+            "test": "Konsistensi agregat all \/ male",
+            "passed": true
+        },
+        {
+            "test": "Konsistensi agregat all \/ female",
+            "passed": true
+        },
+        {
+            "test": "Konsistensi agregat PNS \/ all",
+            "passed": true
+        },
+        {
+            "test": "Konsistensi agregat PNS \/ male",
+            "passed": true
+        },
+        {
+            "test": "Konsistensi agregat PNS \/ female",
+            "passed": true
+        },
+        {
+            "test": "Konsistensi agregat PPPK Penuh Waktu \/ all",
+            "passed": true
+        },
+        {
+            "test": "Konsistensi agregat PPPK Penuh Waktu \/ male",
+            "passed": true
+        },
+        {
+            "test": "Konsistensi agregat PPPK Penuh Waktu \/ female",
+            "passed": true
+        },
+        {
+            "test": "Konsistensi agregat PPPK Paruh Waktu \/ all",
+            "passed": true
+        },
+        {
+            "test": "Konsistensi agregat PPPK Paruh Waktu \/ male",
+            "passed": true
+        },
+        {
+            "test": "Konsistensi agregat PPPK Paruh Waktu \/ female",
+            "passed": true
+        },
+        {
+            "test": "Konsistensi agregat PJLP \/ all",
+            "passed": true
+        },
+        {
+            "test": "Konsistensi agregat PJLP \/ male",
+            "passed": true
+        },
+        {
+            "test": "Konsistensi agregat PJLP \/ female",
+            "passed": true
+        },
+        {
+            "test": "Batas generasi, PJLP manual, NIPPPK dan data kosong: all",
+            "passed": true
+        },
+        {
+            "test": "Batas generasi, PJLP manual, NIPPPK dan data kosong: PNS",
+            "passed": true
+        },
+        {
+            "test": "Batas generasi, PJLP manual, NIPPPK dan data kosong: PPPK Penuh Waktu",
+            "passed": true
+        },
+        {
+            "test": "Batas generasi, PJLP manual, NIPPPK dan data kosong: PPPK Paruh Waktu",
+            "passed": true
+        },
+        {
+            "test": "Batas generasi, PJLP manual, NIPPPK dan data kosong: PJLP",
+            "passed": true
+        },
+        {
+            "test": "Identitas fixture tidak muncul pada HTML",
+            "passed": true
+        },
+        {
+            "test": "Data uji dibersihkan dan agregat dipulihkan",
+            "passed": true
+        }
+    ]
+}

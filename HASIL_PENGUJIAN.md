@@ -1,4 +1,6 @@
-# Hasil Pengujian Kepegawaian Distapangtani
+# Hasil Pengujian Kepegawaian Distapangtani — Versi Awal
+
+Catatan: laporan ini menyimpan hasil versi awal sebelum direktori publik diganti dashboard. Hasil pembaruan terkini ada di **HASIL_DASHBOARD.md**; bagian tes direktori publik dalam laporan historis ini sudah tidak berlaku.
 
 Tanggal verifikasi: 22 September 2026. Pengujian memakai salinan database lokal terpisah; tidak menggunakan database produksi.
 

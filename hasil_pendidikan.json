@@ -1,0 +1,186 @@
+{
+    "passed": 45,
+    "failed": 0,
+    "results": [
+        {
+            "test": "Budi, S.P",
+            "passed": true
+        },
+        {
+            "test": "Budi, M.Si",
+            "passed": true
+        },
+        {
+            "test": "Budi, S.P., M.Si",
+            "passed": true
+        },
+        {
+            "test": "Budi, M.Si., S.P.",
+            "passed": true
+        },
+        {
+            "test": "Budi S.P.",
+            "passed": true
+        },
+        {
+            "test": "Budi, s. p., m. si.",
+            "passed": true
+        },
+        {
+            "test": "Budi, S.Kom., M.Kom., Ph.D.",
+            "passed": true
+        },
+        {
+            "test": "Budi, Ph.D., M.Si.",
+            "passed": true
+        },
+        {
+            "test": "Budi, A.Md",
+            "passed": true
+        },
+        {
+            "test": "Budi, A.Md.Kep.",
+            "passed": true
+        },
+        {
+            "test": "Budi, A.Md., S.T.",
+            "passed": true
+        },
+        {
+            "test": "Budi, S.Tr.Kep.",
+            "passed": true
+        },
+        {
+            "test": "Budi, S.E., Ak.",
+            "passed": true
+        },
+        {
+            "test": "Budi, M.M",
+            "passed": true
+        },
+        {
+            "test": "Budi",
+            "passed": true
+        },
+        {
+            "test": "dr. Budi",
+            "passed": true
+        },
+        {
+            "test": "drh. Budi",
+            "passed": true
+        },
+        {
+            "test": "Drs. Budi",
+            "passed": true
+        },
+        {
+            "test": "Ir. Budi",
+            "passed": true
+        },
+        {
+            "test": "Budi, GelarTidakDikenal",
+            "passed": true
+        },
+        {
+            "test": "S.P. Budi",
+            "passed": true
+        },
+        {
+            "test": "Budi, <script>alert(1)<\/script>",
+            "passed": true
+        },
+        {
+            "test": "Ir Budi",
+            "passed": true
+        },
+        {
+            "test": "Budi, Ir.",
+            "passed": true
+        },
+        {
+            "test": "drh Budi",
+            "passed": true
+        },
+        {
+            "test": "Budi, drh.",
+            "passed": true
+        },
+        {
+            "test": "DRH. Budi, S.P.",
+            "passed": true
+        },
+        {
+            "test": "Ir. Budi, M.Si.",
+            "passed": true
+        },
+        {
+            "test": "drh. Budi, M.Si.",
+            "passed": true
+        },
+        {
+            "test": "drh. Budi, Ph.D.",
+            "passed": true
+        },
+        {
+            "test": "H. Ir. Budi",
+            "passed": true
+        },
+        {
+            "test": "Ir. drh. Budi",
+            "passed": true
+        },
+        {
+            "test": "Irawan",
+            "passed": true
+        },
+        {
+            "test": "Irma Budi",
+            "passed": true
+        },
+        {
+            "test": "Budi Irwan",
+            "passed": true
+        },
+        {
+            "test": "Manual: SD\/sederajat",
+            "passed": true
+        },
+        {
+            "test": "Manual: SMP\/sederajat",
+            "passed": true
+        },
+        {
+            "test": "Manual: SMA\/sederajat",
+            "passed": true
+        },
+        {
+            "test": "Manual: Diploma I - Diploma III",
+            "passed": true
+        },
+        {
+            "test": "Manual: Diploma IV\/Sarjana (S1)",
+            "passed": true
+        },
+        {
+            "test": "Manual: Magister (S2)",
+            "passed": true
+        },
+        {
+            "test": "Manual: Doktor (S3)",
+            "passed": true
+        },
+        {
+            "test": "Manual: Program Profesi Dokter Hewan",
+            "passed": true
+        },
+        {
+            "test": "Nilai pendidikan palsu ditolak",
+            "passed": true
+        },
+        {
+            "test": "Mode otomatis memilih tertinggi",
+            "passed": true
+        }
+    ]
+}
